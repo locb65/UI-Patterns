@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+}
+.title {
+    color: aliceblue;
+}
+
+.movie-container {
+    display: grid;
+    grid-template-columns:repeat(2, 1fr) ;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.movies {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#top-movie {
+    grid-column: 1 / span 2;
+}
