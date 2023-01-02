@@ -3,6 +3,8 @@ body {
 }
 .title {
     color: aliceblue;
+    text-align: center;
+    background-color: rgb(60, 42, 42);
 }
 p {
     color: white ;
@@ -76,3 +78,7 @@ p {
     text-align: center;
 }
 
+.modal-image {
+    max-width: 300px;
+    max-height: 300px;
+}

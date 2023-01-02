@@ -3,6 +3,9 @@ const spirited = document.querySelector('.spirited')
 modal = null
 closeButton = null
 const princess = document.querySelector('.princess')
+const totoro = document.querySelector('.totoro')
+const howls = document.querySelector('.howls')
+const castle = document.querySelector('.castle') 
 
 function showModal(evt) {
     temp = evt.currentTarget.myParam
@@ -10,8 +13,6 @@ function showModal(evt) {
     if (temp != null) {
         modal.classList.toggle("show-movieModal")
     }
-    console.log(evt.currentTarget.myParam);
-    console.log(temp)
     closeButton = document.querySelector(temp + "Close")
     closeButton.addEventListener('click', closeModal);
 }
@@ -29,8 +30,16 @@ function windowClick (event) {
     }
 }
 
-spirited.addEventListener('click', showModal);
+
 spirited.myParam = '.spiritedModal'
 princess.myParam = '.princessModal'
+totoro.myParam = '.totoroModal'
+howls.myParam = '.howlsModal'
+castle.myParam = '.castleModal'
+
+spirited.addEventListener('click', showModal);
 window.addEventListener('click', windowClick)
 princess.addEventListener('click', showModal)
+totoro.addEventListener('click', showModal)
+howls.addEventListener('click', showModal)
+castle.addEventListener('click', showModal)
