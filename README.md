@@ -28,3 +28,5 @@
 #### This is the overall flow behind the methods used to approach this project. Please let me know your feedback!
 
 ## Thank You!
+
+# deployed Url: https://locb65.github.io/UI-Patterns/  Repo Url: https://github.com/locb65/UI-Patterns
