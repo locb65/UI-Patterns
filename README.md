@@ -27,6 +27,8 @@
 
 #### This is the overall flow behind the methods used to approach this project. Please let me know your feedback!
 
+##### Movie Covers were taken from Google Images
+
 ## Thank You!
 
-### deployed Url: https://locb65.github.io/UI-Patterns/  Repo Url: https://github.com/locb65/UI-Patterns
+#### deployed Url: https://locb65.github.io/UI-Patterns/Index.html  Repo Url: https://github.com/locb65/UI-Patterns
