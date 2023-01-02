@@ -1,18 +1,36 @@
 
 const spirited = document.querySelector('.spirited')
-const modal = document.querySelector('.spiritedModal')
-const closeButton = document.querySelector(".close-button")
+modal = null
+closeButton = null
+const princess = document.querySelector('.princess')
 
-function showSpirited() {
-    modal.classList.toggle("show-spiritedModal")
+function showModal(evt) {
+    temp = evt.currentTarget.myParam
+    modal = document.querySelector(temp)
+    if (temp != null) {
+        modal.classList.toggle("show-movieModal")
+    }
+    console.log(evt.currentTarget.myParam);
+    console.log(temp)
+    closeButton = document.querySelector(temp + "Close")
+    closeButton.addEventListener('click', closeModal);
 }
-
-function windowClick (event) {
-    if (event.target === modal) {
-        showSpirited();
+function closeModal() {
+    if (modal != null) {
+    modal.classList.toggle("show-movieModal")
     }
 }
 
-spirited.addEventListener('click', showSpirited);
-closeButton.addEventListener('click', showSpirited);
+ 
+
+function windowClick (event) {
+    if (event.target === modal) {
+        closeModal();
+    }
+}
+
+spirited.addEventListener('click', showModal);
+spirited.myParam = '.spiritedModal'
+princess.myParam = '.princessModal'
 window.addEventListener('click', windowClick)
+princess.addEventListener('click', showModal)
