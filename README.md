@@ -29,6 +29,11 @@
 
 ##### Movie Covers were taken from Google Images
 
+### Built With:
+1. Html
+2. CSS
+3. Javascript
+
 ## Thank You!
 
 #### deployed Url: https://locb65.github.io/UI-Patterns/Index.html  Repo Url: https://github.com/locb65/UI-Patterns
